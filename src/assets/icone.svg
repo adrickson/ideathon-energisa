@@ -1,0 +1,31 @@
+<svg
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Gradiente de fundo -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="100%" stop-color="#3498db"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="512" height="512" rx="64" fill="url(#bgGradient)" />
+
+  <!-- Raio -->
+  <path
+    d="M290 80
+       L200 260
+       H260
+       L220 440
+       L360 220
+       H290
+       Z"
+    fill="#ffffff"
+  />
+</svg>
+
+

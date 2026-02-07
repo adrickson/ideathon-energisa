@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import { Zap, Menu, X, User, Settings, LogOut, Sun, Moon } from "lucide-react";
+import { useState } from "react";
+import { Menu, X, User, Settings, LogOut, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext.jsx";
+import logoUrl from '../assets/icone.svg';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +12,10 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm font-sans">
       <div className="max-w-md mx-auto px-4 h-16 flex items-center justify-between relative">
         <div className="flex items-center gap-2">
-          <div className="bg-primary p-1.5 rounded-lg shadow-md shadow-primary/20">
-            <Zap className="text-primary-foreground w-5 h-5" fill="currentColor" />
+          <div className=" p-1.5 rounded-lg shadow-md shadow-primary/20">
+            <img className="w-10 h-10" src={logoUrl} alt="Logo" />
           </div>
+
           <div className="flex flex-col">
             <h1 className="text-lg font-bold text-foreground leading-none tracking-tight">
               Avisa Energisa
@@ -49,11 +52,11 @@ const Header = () => {
             <button className="flex items-center gap-3 px-4 py-2 text-sm text-muted-foreground hover:bg-accent/10 hover:text-accent rounded-lg transition-colors text-left w-full">
               <Settings size={18} /> Configurações
             </button>
-            <button 
+            <button
               onClick={toggleTheme}
               className="flex items-center gap-3 px-4 py-2 text-sm text-muted-foreground hover:bg-accent/10 hover:text-accent rounded-lg transition-colors text-left w-full"
             >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />} 
+              {isDark ? <Sun size={18} /> : <Moon size={18} />}
               {isDark ? "Modo Claro" : "Modo Escuro"}
             </button>
 
