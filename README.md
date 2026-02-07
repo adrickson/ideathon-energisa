@@ -92,7 +92,7 @@ Intensidade do Campo
                                               ▼
 ┌─────────────┐    ┌──────────────┐    ┌──────────────┐
 │  6. ENVIO   │◀───│  5. REVISÃO  │◀───│  4. ANÁLISE  │
-│  Protocolo  │    │   Confirma   │    │   IA (mock)  │
+│  Protocolo  │    │   Confirma   │    │              │
 └─────────────┘    └──────────────┘    └──────────────┘
 ```
 
@@ -162,7 +162,7 @@ Intervenção ◀─── Detecções Proteger
 
 ### Fundamentação Técnica
 
-- **Física Comprovada**: Campo eletromagnético 60Hz existe independentemente de condições
+- **Física Comprovada**: Campo eletromagnético existe independentemente de condições
 - **Alerta Automático**: Elimina dependência de atenção humana
 - **Escalabilidade**: Hardware simples, software adaptável
 - **Custo-Benefício**: Prevenção é mais barata que indenização + vida
